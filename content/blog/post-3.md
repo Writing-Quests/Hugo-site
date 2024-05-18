@@ -1,7 +1,7 @@
 +++
 title = 'post 3'
 date = 2024-04-20T16:31:53+01:00
-draft = true
+draft = false
 summary = "This post has a pre-supplied summary!"
 +++
 

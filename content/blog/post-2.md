@@ -1,7 +1,7 @@
 +++
 title = 'post 2'
 date = 2024-04-20T16:31:53+01:00
-draft = true
+draft = false
 +++
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Suspendisse potenti nullam ac tortor vitae. Et ligula ullamcorper malesuada proin libero. Ac tincidunt vitae semper quis lectus nulla at volutpat diam. Aliquet bibendum enim facilisis gravida. Adipiscing commodo elit at imperdiet dui. Et pharetra pharetra massa massa ultricies mi quis. Aenean pharetra magna ac placerat vestibulum lectus. Nunc eget lorem dolor sed viverra. Sem integer vitae justo eget magna fermentum iaculis eu non. Nam libero justo laoreet sit amet cursus. Eget mauris pharetra et ultrices neque ornare aenean euismod. Condimentum vitae sapien pellentesque habitant morbi tristique senectus.
 
