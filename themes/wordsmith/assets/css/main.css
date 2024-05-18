@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: #40345b;
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin: 1rem;
+}
+
+header {
+  border-bottom: 1px solid #222;
+  margin-bottom: 1rem;
+}
+
+footer {
+  border-top: 1px solid #222;
+  margin-top: 1rem;
+}
+
+.hide {display: none;}
+
+.show {display: block;}
+
+@media (min-width: 768px) {
+  .child-menu-dropdown {
+    margin-top: 5rem;
+    align-self: start;
+  }
+}
+li div ul li {
+  background: #ffdc8c;
+}
+
+li div ul li:hover {
+  background-color: #53afec !important;
+}
+
+div.markdown-content p {
+  margin-bottom: 1rem;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+  --tw-gradient-from: #f5f4f0 var(--tw-gradient-from-position);
+  --tw-gradient-to: #fff4e5 var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  background-attachment: fixed;
+}
+
+h1 a {
+  color: #40345b;
+}
+
+li a {
+  color: #40345b;
+}
+
+li {
+  color: #40345b;
+}
+
+a {
+  color: #b83a14;
+}
+
+@media (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+    .hamburger-button {
+      display: block;
+    }
+  }
+
+@media (max-width: 768px) {
+  @media (min-width: 641px) {
+    .desktop-nav {
+      display: none;
+    }
+    .hamburger-nav {
+      position: absolute;
+      width: 20rem;
+    }
+    .child-menu-dropdown {
+      width: 20rem;
+      margin-top: 2rem;
+      align-self: start;
+    }
+  }
+}
+
+  @media (max-width: 640px) {
+    .desktop-nav {
+      display: none;
+    }
+    .hamburger-nav {
+      position: absolute;
+      width: 100%;
+      left: 0;
+    }
+    .child-menu-dropdown {
+      position: absolute;
+      width: 100%;
+      margin-top: 2rem;
+      align-self: start;
+    }
+  }
+
+.hamburger-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.varela-round-regular {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+ul.child-menu-dropdown li {
+  border-left-width: medium;
+  border-right-width: medium;
+  border-color: #ffc107;
+}
+
+ul.child-menu-dropdown {
+  border-color: #ffc107;
+  border-top-width: medium;
+  border-bottom-width: medium;
+}

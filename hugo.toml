@@ -1,0 +1,55 @@
+baseURL = 'https://www.writingquests.org/'
+languageCode = 'en-us'
+title = 'Writing Quests'
+theme = 'wordsmith'
+
+[menu]
+  [[menu.main]]
+    name = 'about'
+    pageRef = '/about/'
+    weight = 20
+
+  [[menu.main]]
+    name = 'blog'
+    pageRef = '/blog/'
+    weight = 20
+
+  [[menu.main]]
+    name = 'contact us'
+    pageRef = '/contact/'
+    weight = 20
+
+  [[menu.main]]
+    name = 'get involved'
+    pageRef = '/get-involved/'
+    weight = 20
+
+  [[menu.main]]
+    name = 'challenges'
+    parent = 'get involved'
+    pageRef = '/get-involved/challenges/'
+    weight = 20
+
+  [[menu.main]]
+    name = 'events'
+    parent = 'get involved'
+    pageRef = '/get-involved/events/'
+    weight = 20
+
+  [[menu.main]]
+    name = 'the framework'
+    parent = 'get involved'
+    pageRef = '/get-involved/framework/'
+    weight = 20
+
+  [[menu.main]]
+    name = 'participating groups'
+    parent = 'get involved'
+    pageRef = '/get-involved/participating-groups/'
+    weight = 20
+
+  [[menu.main]]
+    name = 'resources and assets'
+    parent = 'get involved'
+    pageRef = '/get-involved/resources-and-assets/'
+    weight = 20

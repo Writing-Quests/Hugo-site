@@ -1,0 +1,140 @@
+{{- /*
+Renders a menu for the given menu ID.
+
+@context {page} page The current page.
+@context {string} menuID The menu ID.
+
+@example: {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+*/}}
+
+{{- $page := .page }}
+{{- $menuID := .menuID }}
+
+{{- with index site.Menus $menuID }}
+  <nav tabindex="0" class="desktop-nav w-1/2 h-full" aria-label="main menu">
+    <ul class="h-full w-full grid grid-rows-1 grid-cols-4">
+      {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+    </ul>
+  </nav>
+    <nav tabindex="0" class="mobile-nav h-full block text-right" aria-label="main menu">
+        <button class="hamburger-button z-50" onclick="toggleHamburger(this.parentNode)">
+            <i class="fa-solid fa-bars fa-2xl"></i>
+        </button>
+        <ul class="block hamburger-nav hide bg-amber-50">
+            {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+        </ul>
+    </nav>
+{{- end }}
+
+{{- define "partials/inline/menu/walk.html" }}
+        {{- $page := .page }}
+        {{- range .menuEntries }}
+          {{- $attrs := dict "href" .URL }}
+          {{- if $page.IsMenuCurrent .Menu . }}
+            {{- $attrs = merge $attrs (dict "class" "active" "aria-current" "page") }}
+          {{- else if $page.HasMenuCurrent .Menu .}}
+            {{- $attrs = merge $attrs (dict "class" "ancestor" "aria-current" "true") }}
+          {{- end }}
+          {{- $name := .Name }}
+          {{- with .Identifier }}
+            {{- with T . }}
+              {{- $name = . }}
+            {{- end }}
+          {{- end }}
+
+
+      {{ if .HasChildren }}
+                <li onfocusout="closeMenuFromChild(this)" class="items-center col-auto columns-md flex" aria-label="menu item">
+                  <div class="hover:underline h-full w-full py-4 md:p-0 md:my-4 flex items-center" tabindex="0" onclick="mobileToggleMenu(this)" onkeydown="mobileToggleMenuWithKey(this, event)" onfocus="openMenu(this)" onmouseover="openMenu(this)" onmouseout="closeMenu(this)">
+                      <span class="w-full text-center">{{ $name }}</span>
+                      <ul tabindex="0" class="child-menu-dropdown absolute hide md:w-44 flex" aria-label="dropdown menu">
+                        {{- with .Children }}
+                          {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+                        {{- end }}
+                      </ul>
+                    </div>
+                </li>
+            {{ else }}
+          <a role="link" class="items-center col-auto columns-md flex"
+             {{- range $k, $v := $attrs }}
+             {{- with $v }}
+             {{- printf " %s=%q" $k $v | safeHTMLAttr }}
+          {{- end }}
+          {{- end }}
+          >
+            <li onfocusout="closeMenuFromChild(this)" class="hover:underline h-full w-full flex items-center" aria-label="menu item">
+              <div class="h-full w-full py-4 md:p-0 md:my-4 flex items-center" tabindex="0">
+                <span class="w-full text-center">{{ $name }}</span>
+              </div>
+            </li>
+        </a>
+
+      {{ end }}
+        {{- end }}
+{{- end }}
+
+<script>
+
+
+  function openMenu(obj) {
+    let dropdown = obj.children[1];
+    if (screen.width > 768 && dropdown.classList.contains('hide')) {
+      dropdown.classList.add("show");
+      dropdown.classList.remove("hide");
+    }
+  }
+
+  function closeMenu(obj) {
+    let dropdown = obj.children[1];
+    if (screen.width > 768 && dropdown.classList.contains('show')) {
+      dropdown.classList.add("hide");
+      dropdown.classList.remove("show");
+    }
+  }
+
+  function mobileToggleMenu(obj) {
+      let dropdown = obj.children[1];
+      if (dropdown.classList.contains('hide')) {
+          dropdown.classList.add("show");
+          dropdown.classList.remove("hide");
+      } else if (dropdown.classList.contains('show')) {
+          dropdown.classList.add("hide");
+          dropdown.classList.remove("show");
+      }
+  }
+
+  function mobileToggleMenuWithKey(obj, event) {
+      // don't toggle the menu if the key pressed was keycode 9, tab
+      if (event.keyCode !== 9) {
+          mobileToggleMenu(obj)
+      }
+  }
+
+  function closeMenuFromChild(obj) {
+    let dropdown = obj.parentNode;
+    if (screen.width > 768 && dropdown.lastElementChild === obj && dropdown.classList.contains('show')) {
+      dropdown.classList.add("hide");
+      dropdown.classList.remove("show");
+    }
+  }
+
+  function toggleHamburger(obj) {
+      let dropdown = obj.children[1];
+      if (dropdown.classList.contains('hide')) {
+          dropdown.classList.add("show");
+          dropdown.classList.remove("hide");
+      }
+      else if (dropdown.classList.contains('show')) {
+          dropdown.classList.add("hide");
+          dropdown.classList.remove("show");
+      }
+  }
+
+  function closeHamburgerFromChild(obj) {
+      let dropdown = obj.parentNode;
+      if (dropdown.lastElementChild === obj && dropdown.classList.contains('show')) {
+          dropdown.classList.add("hide");
+          dropdown.classList.remove("show");
+      }
+  }
+</script>
