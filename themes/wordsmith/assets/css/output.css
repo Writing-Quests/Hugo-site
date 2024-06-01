@@ -7,10 +7,6 @@
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 *,
 ::before,
 ::after {
@@ -582,10 +578,6 @@ video {
   margin: 0px;
 }
 
-.m-5 {
-  margin: 1.25rem;
-}
-
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -619,6 +611,10 @@ video {
   width: 100%;
 }
 
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .columns-md {
   -moz-columns: 28rem;
        columns: 28rem;
@@ -637,7 +633,7 @@ video {
 }
 
 .border-0 {
-  border-width: 0;
+  border-width: 0px;
 }
 
 .bg-amber-300 {
@@ -846,6 +842,112 @@ ul.child-menu-dropdown {
   border-bottom-width: medium;
 }
 
+.text-wq-red {
+  --tw-text-opacity: 1;
+  color: #b83a14;
+}
+
+.home-dashboard {
+  background-color: white;
+  border-color: #ffc107;
+  border-width: thick;
+  display: grid;
+}
+
+@media (min-width: 768px) {
+  .home-dashboard {
+    margin: 3rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, calc(30vh + 1.5rem));
+  }
+
+  .dashboard-calendar {
+    margin: 1rem;
+    height: calc(60vh + 2rem);
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .dashboard-panel {
+    margin: .5rem;
+  }
+
+  .social-panel {
+    height: 30vh;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 30vh;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-dashboard {
+    margin: .5rem;
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-calendar {
+    margin: .5rem;
+    height: 60vh;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .dashboard-panel {
+    margin: 1rem;
+  }
+
+  .social-panel {
+    height: 30vh;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    font-size: 10vh;
+  }
+
+  i {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+
+  .dashboard-about {
+    height: 30vh;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .dashboard-rss {
+    height: 30vh;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+}
+
+.dashboard-panel {
+  background-color: #f5f4f0;
+}
+
+.dashboard-rss {
+  overflow: auto;
+}
+
+.social-panel {
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
@@ -876,4 +978,3 @@ ul.child-menu-dropdown {
     width: 50%;
   }
 }
-
