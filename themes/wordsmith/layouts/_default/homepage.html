@@ -1,12 +1,15 @@
 {{ define "main" }}
-<div class="home-dashboard">
+<div class="home-dashboard text-wq-green">
     <div class="dashboard-panel dashboard-about">
-        ABOUT PANEL GO HERE
+        <div class="dashboard-section-title"><h1>About Writing Quests</h1></div>
+        <p class="dashboard-about-copy">ABOUT COPY GOES HERE</p>
     </div>
     <div class="dashboard-panel dashboard-calendar">
         <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Europe%2FLondon&bgcolor=%23ffffff&src=amFpbWllbGJsYWNrQG91dGxvb2suY29t&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udWsjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%230B8043" style="border:solid 1px #777" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
     </div>
     <div class="dashboard-panel dashboard-rss">
+        <div class="dashboard-section-title"><h1>RSS Feed</h1></div>
+        <div class="dashboard-rss-scroll">
         {{ with resources.GetRemote "https://hugomods.com/en/index.xml" | transform.Unmarshal }}
         <ul class="rss-content">
             {{ range .channel.item }}
@@ -16,6 +19,7 @@
             {{ end }}
         </ul>
         {{ end }}
+        </div>
     </div>
     <div class="dashboard-panel social-panel">
         <i class="fa-brands fa-twitter"></i>

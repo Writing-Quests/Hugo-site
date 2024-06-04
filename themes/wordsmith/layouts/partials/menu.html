@@ -20,7 +20,7 @@ Renders a menu for the given menu ID.
         <button class="hamburger-button z-50" onclick="toggleHamburger(this.parentNode)">
             <i class="fa-solid fa-bars fa-2xl"></i>
         </button>
-        <ul class="block hamburger-nav hide bg-amber-50">
+        <ul class="block hamburger-nav hide">
             {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
         </ul>
     </nav>
