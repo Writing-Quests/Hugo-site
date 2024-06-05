@@ -3,6 +3,10 @@ languageCode = 'en-us'
 title = 'Writing Quests'
 theme = 'wordsmith'
 
+[params]
+    [params.homepage]
+      logo = "images/logo2024.svg"
+
 [menu]
   [[menu.main]]
     name = 'about'

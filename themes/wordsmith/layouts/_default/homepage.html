@@ -1,8 +1,33 @@
 {{ define "main" }}
-<div class="home-dashboard text-wq-green">
+
+<div class="welcome-header"><h1>Welcome to the first page of your creative adventure!</h1></div>
+<div class="welcome-text">
+<div class="left-column">
+    <h2>What are Writing Quests?</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Suspendisse potenti nullam ac tortor vitae. Et ligula ullamcorper malesuada proin libero. Ac tincidunt vitae semper quis lectus nulla at volutpat diam. Aliquet bibendum enim facilisis gravida. Adipiscing commodo elit at imperdiet dui. Et pharetra pharetra massa massa ultricies mi quis. Aenean pharetra magna ac placerat vestibulum lectus. Nunc eget lorem dolor sed viverra. Sem integer vitae justo eget magna fermentum iaculis eu non. Nam libero justo laoreet sit amet cursus. Eget mauris pharetra et ultrices neque ornare aenean euismod. Condimentum vitae sapien pellentesque habitant morbi tristique senectus
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Suspendisse potenti nullam ac tortor vitae. Et ligula ullamcorper malesuada proin libero. Ac tincidunt vitae semper quis lectus nulla at volutpat diam. Aliquet bibendum enim facilisis gravida. Adipiscing commodo elit at imperdiet dui. Et pharetra pharetra massa massa ultricies mi quis. Aenean pharetra magna ac placerat vestibulum lectus. Nunc eget lorem dolor sed viverra. Sem integer vitae justo eget magna fermentum iaculis eu non. Nam libero justo laoreet sit amet cursus. Eget mauris pharetra et ultrices neque ornare aenean euismod. Condimentum vitae sapien pellentesque habitant morbi tristique senectus
+    </p>
+</div>
+<div class="right-column">
+    {{ with .Site.Params.homepage.logo }} <img class="home-logo" src="{{(( resources.Get . )).RelPermalink}}" alt="The Writing Quests Logo, a Phoenix emerging from a open book." /> {{ end }}
+    <h2>How can I get involved?</h2>
+    <p>
+        Ultricies tristique nulla aliquet enim tortor at auctor. Iaculis urna id volutpat lacus. Porta nibh venenatis cras sed felis eget velit. A erat nam at lectus urna duis convallis convallis. Pellentesque dignissim enim sit amet venenatis. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Eget nunc lobortis mattis aliquam faucibus purus in massa. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Lectus urna duis convallis convallis tellus. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Massa tempor nec feugiat nisl pretium fusce id. Accumsan tortor posuere ac ut. Velit euismod in pellentesque massa. Tincidunt dui ut ornare lectus sit amet est. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Commodo elit at imperdiet dui. Ac turpis egestas integer eget.
+    </p>
+</div>
+</div>
+    <div class="home-dashboard text-wq-green">
     <div class="dashboard-panel dashboard-about">
-        <div class="dashboard-section-title"><h1>About Writing Quests</h1></div>
-        <p class="dashboard-about-copy">ABOUT COPY GOES HERE</p>
+        <div class="dashboard-section-title"><h1>Quick Links</h1></div>
+        <div class="dashboard-quick-links">
+            {{ with .Site.Params.homepage.logo }} <img class="home-logo" src="{{(( resources.Get . )).RelPermalink}}" alt="The Writing Quests Logo, a Phoenix emerging from a open book." /> {{ end }}
+            {{ with .Site.Params.homepage.logo }} <img class="home-logo" src="{{(( resources.Get . )).RelPermalink}}" alt="The Writing Quests Logo, a Phoenix emerging from a open book." /> {{ end }}
+            {{ with .Site.Params.homepage.logo }} <img class="home-logo" src="{{(( resources.Get . )).RelPermalink}}" alt="The Writing Quests Logo, a Phoenix emerging from a open book." /> {{ end }}
+            {{ with .Site.Params.homepage.logo }} <img class="home-logo" src="{{(( resources.Get . )).RelPermalink}}" alt="The Writing Quests Logo, a Phoenix emerging from a open book." /> {{ end }}
+        </div>
     </div>
     <div class="dashboard-panel dashboard-calendar">
         <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Europe%2FLondon&bgcolor=%23ffffff&src=amFpbWllbGJsYWNrQG91dGxvb2suY29t&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udWsjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%230B8043" style="border:solid 1px #777" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
