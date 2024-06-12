@@ -42,7 +42,7 @@ theme = 'wordsmith'
     weight = 20
 
   [[menu.main]]
-    name = 'Assets and Resources'
+    name = 'assets and resources'
     parent = 'get involved'
     pageRef = '/get-involved/assets-and-resources.md'
     weight = 20
