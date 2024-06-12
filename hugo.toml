@@ -12,6 +12,7 @@ theme = 'wordsmith'
       instagram = "https://instagram.com/writingquests"
       facebook = "https://facebook.com/groups/writingquests"
       calendar = "https://calendar.google.com/calendar/embed?src=ef1f8f146ebcac42b495cdc97fe11f1a5d102695cd12cc5ceb76fec5987c9afd%40group.calendar.google.com&ctz=UTC"
+      contact = "https://docs.google.com/forms/d/e/1FAIpQLSdgVgL2yTOYHUM9SJ379OHzzOTCwclUr4wNmBawq_fvIZcLNA/viewform?embedded=true"
 
 [menu]
   [[menu.main]]
