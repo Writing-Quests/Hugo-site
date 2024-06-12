@@ -6,6 +6,12 @@ theme = 'wordsmith'
 [params]
     [params.homepage]
       logo = "images/logo2024.svg"
+      rss = "https://writingquests.substack.com/feed"
+      twitter = "https://x.com/writingquests"
+      pinterest = "https://pinterest.com/WritingQuests/"
+      instagram = "https://instagram.com/writingquests"
+      facebook = "https://facebook.com/groups/writingquests"
+      calendar = "https://calendar.google.com/calendar/embed?src=ef1f8f146ebcac42b495cdc97fe11f1a5d102695cd12cc5ceb76fec5987c9afd%40group.calendar.google.com&ctz=UTC"
 
 [menu]
   [[menu.main]]
@@ -29,31 +35,13 @@ theme = 'wordsmith'
     weight = 20
 
   [[menu.main]]
-    name = 'challenges'
+    name = 'quests'
     parent = 'get involved'
-    pageRef = '/get-involved/challenges/'
+    pageRef = '/get-involved/quests.md'
     weight = 20
 
   [[menu.main]]
-    name = 'events'
+    name = 'Assets and Resources'
     parent = 'get involved'
-    pageRef = '/get-involved/events/'
-    weight = 20
-
-  [[menu.main]]
-    name = 'the framework'
-    parent = 'get involved'
-    pageRef = '/get-involved/framework/'
-    weight = 20
-
-  [[menu.main]]
-    name = 'participating groups'
-    parent = 'get involved'
-    pageRef = '/get-involved/participating-groups/'
-    weight = 20
-
-  [[menu.main]]
-    name = 'resources and assets'
-    parent = 'get involved'
-    pageRef = '/get-involved/resources-and-assets/'
+    pageRef = '/get-involved/assets-and-resources.md'
     weight = 20

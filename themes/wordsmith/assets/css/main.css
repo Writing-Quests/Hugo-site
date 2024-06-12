@@ -22,15 +22,29 @@ footer {
   background: #b83a14;
   border-color: #000000;
   color: white;
+}
+
+.hamburger-nav {
+  position: absolute;
+  top: calc(5rem - 3px);
+}
+
+.hamburger-nav .child-menu-dropdown {
+  align-self: self-start;
+  margin-top: 2.5rem;
+  background-color: rgb(168, 50, 14);
+}
+
+.desktop-nav .child-menu-dropdown {
+  overflow: auto;
   z-index: 50;
+  top: calc(5rem - 3px);
+
+  align-self: start;
   border-bottom-left-radius: 10%;
   border-bottom-right-radius: 10%;
   border-width: 3px;
-  border-top-width: 0px;
-
-  top: calc(5rem - 3px);
-  align-self: start;
-  overflow: auto;
+  border-top-width: 0;
 }
 
 .hamburger-nav {
@@ -75,29 +89,8 @@ h2 {
   font-size: 2rem;
 }
 
-.welcome-text {
-  width: 100%;
-  display: flex;
-}
-
 .welcome-text p {
   padding: 1rem;
-}
-
-.left-column {
-  width: 40%;
-  position: relative;
-  left: 0;
-  margin-left: 2rem;
-}
-
-.right-column {
-  width: 40%;
-  position: relative;
-  margin-left: 10%;
-  top: 2rem;
-  margin-bottom: 3rem;
-  margin-right: 3rem;
 }
 
 .home-logo {
@@ -251,11 +244,18 @@ nav li {
     grid-column-start: 2;
     grid-column-end: 3;
   }
+  .dashboard-rss {
+    height: calc(60vh + 2rem);
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
   .dashboard-panel {
     margin: .5rem;
     overflow: auto;
   }
-  .social-panel, .dashboard-quick-links{
+  .social-panel {
     display: flex;
     justify-content: space-evenly;
     height: 30vh;
@@ -264,9 +264,27 @@ nav li {
     grid-column-end: 3;
     font-size: 20vh;
   }
-  i {
+  .social-panel a i {
     padding-top: 5vh;
     padding-bottom: 5vh;
+  }
+  .left-column {
+    width: 40%;
+    position: relative;
+    left: 0;
+    margin-left: 2rem;
+  }
+  .right-column {
+    width: 40%;
+    position: relative;
+    margin-left: 10%;
+    top: 2rem;
+    margin-bottom: 3rem;
+    margin-right: 3rem;
+  }
+  .welcome-text {
+    width: 100%;
+    display: flex;
   }
 }
 
@@ -295,16 +313,9 @@ nav li {
     grid-row-end: 5;
     font-size: 20vh;
   }
-  .social-panel i {
+  .social-panel a i {
     padding-top: 5vh;
     padding-bottom: 5vh;
-  }
-  .dashboard-about {
-    height: 30vh;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
   }
   .dashboard-rss {
     height: 30vh;
@@ -312,6 +323,12 @@ nav li {
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+  }
+  .welcome-text {
+    margin: 1rem;
+  }
+  .home-logo {
+    display: none;
   }
 }
 
@@ -364,4 +381,16 @@ i {
 
 .hamburger-button i {
   color: #ffffff;
+}
+
+.rss-content i {
+  padding-right: 1rem;
+}
+
+.rss-content li p {
+  padding-left: 2rem;
+}
+
+.welcome-text ul li {
+  padding: 1rem;
 }
