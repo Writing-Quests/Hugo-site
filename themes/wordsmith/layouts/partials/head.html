@@ -3,7 +3,9 @@
 
 {{ $time := now }}
 
-
+{{ with .Site.Params.homepage.logo }}
+<link rel="icon" type="image/x-icon" href="{{ . }}">
+{{ end }}
 <link rel="stylesheet" href="css/output.css">
 
 
