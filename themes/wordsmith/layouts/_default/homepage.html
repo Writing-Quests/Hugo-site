@@ -5,20 +5,20 @@
 <div class="left-column">
     <h2>What is Writing Quests?</h2>
     <ul>
-        <li> <i class="fa-solid fa-pen-nib"></i> An Association of leaders of writing communities around the globe, most of whom were inspired by the original National Novel Writing Month (aka NaNoWriMo) and the concept created by Chris Baty–motivating writers everywhere to accomplish their dreams and write their novels while having fun doing it in the community of fellow writers </li>
-        <li> <i class="fa-solid fa-pen-nib"></i> A Framework of rules, guidelines, and supporting assets (such as trackers and virtual badges) to support writing groups and communities who would like to host their own Writing Quests.</li>
-        <li> <i class="fa-solid fa-pen-nib"></i> An organization promoting creativity and the love of writing through the facilitation of quests to motivate writers.</li>
+        <li> <i tabindex="0" class="fa-solid fa-pen-nib"></i> An Association of leaders of writing communities around the globe, most of whom were inspired by the original National Novel Writing Month (aka NaNoWriMo) and the concept created by Chris Baty–motivating writers everywhere to accomplish their dreams and write their novels while having fun doing it in the community of fellow writers </li>
+        <li> <i tabindex="0" class="fa-solid fa-pen-nib"></i> A Framework of rules, guidelines, and supporting assets (such as trackers and virtual badges) to support writing groups and communities who would like to host their own Writing Quests.</li>
+        <li> <i tabindex="0" class="fa-solid fa-pen-nib"></i> An organization promoting creativity and the love of writing through the facilitation of quests to motivate writers.</li>
     </ul>
 </div>
 <div class="right-column">
     {{ with .Site.Params.homepage.logo }} <img class="home-logo" src="{{(( resources.Get . )).RelPermalink}}" alt="The Writing Quests Logo, a Phoenix emerging from a open book." /> {{ end }}
     <h2>How can I get involved?</h2>
     <ul>
-        <li> <i class="fa-solid fa-pen-nib"></i> Quest Guides- The people who host the Writing Quests are called Quest Guides.  They will help creatives through the process of setting goals, prepping for the quests, and provide encouragement during the event. Click <a href="/get-involved/framework/">here</a> to view the framework and get started.</li>
+        <li> <i tabindex="0" class="fa-solid fa-pen-nib"></i> Quest Guides- The people who host the Writing Quests are called Quest Guides.  They will help creatives through the process of setting goals, prepping for the quests, and provide encouragement during the event. Click <a href="/get-involved/framework/">here</a> to view the framework and get started.</li>
 
-        <li> <i class="fa-solid fa-pen-nib"></i> Participants- Anyone can participate even if you are not a writer.  Click <a href="get-involved/participating-groups/">here</a> to find a group near you.</li>
+        <li> <i tabindex="0" class="fa-solid fa-pen-nib"></i> Participants- Anyone can participate even if you are not a writer.  Click <a href="get-involved/participating-groups/">here</a> to find a group near you.</li>
 
-        <li> <i class="fa-solid fa-pen-nib"></i> Volunteers- Writing Quests is an all volunteer organization.  If you want to volunteer, please email <a href="mailto:info@writingquests.org">info@writingquests.org</a> and let us know your experience and if applicable, what you are looking to help with.</li>
+        <li> <i tabindex="0" class="fa-solid fa-pen-nib"></i> Volunteers- Writing Quests is an all volunteer organization.  If you want to volunteer, please email <a href="mailto:info@writingquests.org">info@writingquests.org</a> and let us know your experience and if applicable, what you are looking to help with.</li>
     </ul>
 </div>
 </div>
@@ -35,25 +35,25 @@
             {{ with resources.GetRemote $url | transform.Unmarshal }}
         <ul class="rss-content">
             <li>
-                <i class="fa-solid fa-pen-nib"></i><a href="{{ .channel.item.link }}">{{ .channel.item.title }}</a>
+                <a href="{{ .channel.item.link }}"><i tabindex="0" class="fa-solid fa-pen-nib"></i>{{ .channel.item.title }}</a>
             <p>{{ .channel.item.description }}</p>
             </li>
         </ul>
             {{ end }}
         </div>
     </div>
-    <div class="dashboard-panel social-panel">
+    <div tabindex="1" class="dashboard-panel social-panel">
         {{ with .Site.Params.homepage.twitter }}
-        <a href = "{{ . }}"><i class="fa-brands fa-twitter"></i></a>
+        <a href="{{ . }}" tabindex="0"><i tabindex="0" class="fa-brands fa-twitter"></i></a>
         {{ end }}
         {{ with .Site.Params.homepage.instagram }}
-        <a href = "{{ . }}"><i class="fa-brands fa-instagram"></i></a>
+        <a href="{{ . }}" tabindex="0"><i tabindex="0" class="fa-brands fa-instagram"></i></a>
         {{ end }}
         {{ with .Site.Params.homepage.facebook }}
-        <a href = "{{ . }}"><i class="fa-brands fa-facebook"></i></a>
+        <a href="{{ . }}" tabindex="0"><i tabindex="0" class="fa-brands fa-facebook"></i></a>
         {{ end }}
         {{ with .Site.Params.homepage.pinterest }}
-        <a href = "{{ . }}"><i class="fa-brands fa-pinterest"></i></a>
+        <a href="{{ . }}" tabindex="0"><i tabindex="0" class="fa-brands fa-pinterest"></i></a>
         {{ end }}
     </div>
 </div>

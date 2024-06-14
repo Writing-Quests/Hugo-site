@@ -1,6 +1,4 @@
 <div class="flex wq-navbar w-full h-20">
-    <a tabindex="1" href="/">
-        <h1 tabindex="0" class="text-4xl p-6 w-76">{{ site.Title }}</h1>
-    </a>
+        <a class="site-title" tabindex="0" href="/"><h1 tabindex="1" class="text-4xl p-6 w-76">{{ site.Title }}</h1></a>
         {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
 </div>
