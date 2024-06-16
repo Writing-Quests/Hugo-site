@@ -12,7 +12,7 @@ Renders a menu for the given menu ID.
 
 {{- with index site.Menus $menuID }}
   <nav tabindex="0" class="desktop-nav w-1/2 h-full" aria-label="main menu">
-    <ul class="h-full w-full grid grid-rows-1 grid-cols-4">
+    <ul class="h-full w-full grid grid-rows-1 grid-cols-5">
       {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
     </ul>
   </nav>

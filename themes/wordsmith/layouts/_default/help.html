@@ -1,0 +1,17 @@
+{{ define "main" }}
+<div class="p-6 block markdown-content xl:w-1/2 lg:w-3/4 m:w-full">
+    <h1 class="text-3xl text-fuchsia-950 w-full py-8">{{ .Title }}</h1>
+
+    <div class="text-left">
+        {{ .Content }}
+    </div>
+
+    {{ with .Site.Params.homepage.help }}
+    <iframe src="{{ . }}" width="640" height="1742" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    {{ end }}
+    {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+    {{ $dateHuman := .Date | time.Format ":date_long" }}
+    <time class="w-full text-gray-400 text-right block" datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+    {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+</div>
+{{ end }}
