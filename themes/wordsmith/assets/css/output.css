@@ -815,8 +815,12 @@ h1 a {
   color: #ffffff;
 }
 
-li a {
-  text-decoration-line: underline;
+a {
+  text-decoration: underline;
+}
+
+.site-title {
+  text-decoration: none !important;
 }
 
 nav li {

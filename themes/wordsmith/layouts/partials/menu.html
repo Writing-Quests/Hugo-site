@@ -18,7 +18,7 @@ Renders a menu for the given menu ID.
   </nav>
     <nav tabindex="0" class="mobile-nav h-full block text-right" aria-label="main menu">
         <button class="hamburger-button z-50" onclick="toggleHamburger(this.parentNode)">
-            <i class="fa-solid fa-bars fa-2xl"></i>
+            <i tabindex="0" class="fa-solid fa-bars fa-2xl"></i>
         </button>
         <ul class="block hamburger-nav hide">
             {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
