@@ -106,6 +106,21 @@ h6 {
   font-weight: inherit;
 }
 
+h1 {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+h2 {
+    padding-top: 10px;
+    font-size: 1.0rem;
+    font-weight: bold;
+}
+h3 {
+    padding-top: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
 /*
 Reset links to optimize for opt-in styling instead of opt-out.
 */
@@ -349,8 +364,8 @@ legend {
   padding: 0;
 }
 
-ol,
-ul,
+/* ol,
+ul, -- 2024-06-15 */
 menu {
   list-style: none;
   margin: 0;
@@ -620,6 +635,10 @@ video {
        columns: 28rem;
 }
 
+.grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -777,7 +796,7 @@ body {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.1rem; /* orig 2rem */
 }
 
 .welcome-text p {
@@ -786,6 +805,10 @@ h2 {
 
 .home-logo {
   z-index: 2;
+}
+
+p a {
+    color: blue;
 }
 
 h1 a {
@@ -931,6 +954,10 @@ nav li {
     padding: .5rem;
   }
 
+  .page-content p {
+      padding-top: 5px;
+  }
+
   .home-dashboard {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, calc(30vh + 1.5rem));
@@ -940,10 +967,10 @@ nav li {
     margin: 1rem;
     padding: 1rem;
     height: calc(60vh + 2rem);
-    grid-row-start: 1;
-    grid-row-end: 4;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 8;
+    grid-column-start: 1;
+    grid-column-end: 4;
   }
 
   .dashboard-rss {
@@ -951,7 +978,7 @@ nav li {
     grid-row-start: 1;
     grid-row-end: 4;
     grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-end: 4;
   }
 
   .dashboard-panel {
@@ -962,10 +989,11 @@ nav li {
   .social-panel {
     display: flex;
     justify-content: space-evenly;
-    height: 30vh;
+    height: 17vh; /* originally 30 vh */
+    width: 100%;
     grid-column-start: 1;
     grid-column-end: 3;
-    font-size: 20vh;
+    font-size: 5vh; /* originally 20vh - 2024-06-15 */
   }
 
   .social-panel a i {
@@ -1015,12 +1043,12 @@ nav li {
   }
 
   .social-panel {
-    height: 30vh;
+    height: 17vh; /* origin 30vh */
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 4;
     grid-row-end: 5;
-    font-size: 20vh;
+    font-size: 5vh; /* originally 20vh */
   }
 
   .social-panel a i {

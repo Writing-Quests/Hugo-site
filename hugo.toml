@@ -11,8 +11,10 @@ theme = 'wordsmith'
       pinterest = "https://pinterest.com/WritingQuests/"
       instagram = "https://instagram.com/writingquests"
       facebook = "https://facebook.com/groups/writingquests"
+      youtube = "https://www.youtube.com/channel/UCGNbZWYi4pTkENOYYLgtCvg"
       calendar = "https://calendar.google.com/calendar/embed?src=ef1f8f146ebcac42b495cdc97fe11f1a5d102695cd12cc5ceb76fec5987c9afd%40group.calendar.google.com&ctz=UTC"
       contact = "https://docs.google.com/forms/d/e/1FAIpQLSdgVgL2yTOYHUM9SJ379OHzzOTCwclUr4wNmBawq_fvIZcLNA/viewform?embedded=true"
+      help = "https://docs.google.com/forms/d/e/1FAIpQLSdE1IFm3SlGAf4bkWeriH3uFDLc6KxqMGfLUw9jCV-emsytDg/viewform?embedded=true"
     [params.meta]
       favicon = "1"
 
@@ -21,6 +23,11 @@ theme = 'wordsmith'
   [[menu.main]]
     name = 'about'
     pageRef = '/about/'
+    weight = 20
+
+  [[menu.main]]
+    name = 'framework'
+    pageRef = '/framework/'
     weight = 20
 
   [[menu.main]]
@@ -39,10 +46,16 @@ theme = 'wordsmith'
     weight = 20
 
   [[menu.main]]
-    name = 'quests'
+    name = 'help out'
     parent = 'get involved'
-    pageRef = '/get-involved/quests.md'
+    pageRef = '/get-involved/help/'
     weight = 20
+
+# LATER   [[menu.main]]
+# LATER     name = 'quests'
+# LATER     parent = 'get involved'
+# LATER     pageRef = '/get-involved/quests.md'
+# LATER     weight = 20
 
   [[menu.main]]
     name = 'assets and resources'
