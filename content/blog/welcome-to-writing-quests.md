@@ -7,6 +7,8 @@ draft = false
 
 Today, I have the pleasure to announce the unveiling of our Writing Quests Framework and Community.
 
+[![Read more](/read-more.png)](/blog/welcome-to-writing-quests/)
+
 <!--more-->
 
 During a period of uncertainty, the Writing Quest Framework came about as former Municipal Liaisons from NaNoWriMo gathered together to pass on their experience on prepping, running, and finishing writing challenges and events. This community is chock-full of leaders in their communities, some who have decades of knowledge to pass on, but wanted to continue to build their communities and push each other creatively. Thus, Writing Quests and The Framework was born.
