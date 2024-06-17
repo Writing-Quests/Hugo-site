@@ -1,6 +1,6 @@
 +++
 title = 'About Writing Quests'
-date = 2024-04-17T16:31:08+01:00
+date = 2024-06-16T22:04:08+01:00
 draft = false
 +++
 
@@ -49,5 +49,3 @@ Volunteers- Writing Quests is an all volunteer organization.  If you want to vo
 ## Why Writing Quests?<a id="why-writing-quests"></a>
 
 Writing Quests aims to facilitate communities worldwide in setting out on a shared adventure of creativity, discovery, and support.  Writing Quests was made for use by communities to assist in the prepping, creation, and running of writing events.  We have Guidebooks to help Guides create an event, host the event, and grow their communities. 
-
-
