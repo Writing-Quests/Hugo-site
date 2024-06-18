@@ -2,6 +2,7 @@
 title = 'Help Out Writing Quests'
 date = 2024-06-15T11:25:29+01:00
 draft = false
+layout = "help"
 +++
 
 ## How to help Writing Quests
