@@ -26,6 +26,18 @@ theme = 'wordsmith'
     weight = 20
 
   [[menu.main]]
+    name = 'writing quests'
+    pageRef = '/about/'
+    parent = 'about'
+    weight = 20
+
+  [[menu.main]]
+    name = 'data privacy'
+    pageRef = '/cla-privacy-policy/'
+    parent = 'about'
+    weight = 20
+
+  [[menu.main]]
     name = 'framework'
     pageRef = '/framework/'
     weight = 20
