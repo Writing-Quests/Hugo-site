@@ -15,7 +15,7 @@ Here is how you can contribute your creativity to help us further develop the Wr
 
 Writing Quests requires the agreement from its Contributors to assign non-exclusive rights to what the Contributors create and give to the Writing Quests Association. This allows Writing Quests to make its Framework and other assets available under the [Creative Commons Attribution Non-Commercial Sharealike 4.0 license](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en).
 
-A downloadable PDF will be linked here in the next two weeks for Contributors to use to document their agreement with this policy.
+You may [download the fillable Writing Quests Contributors Agreement PDF](/writing_quests_contributors_agreement_fillable_20240619.pdf) and follow the instructions to e-mail it back to Writing Quests. 
 
 ## Indicate your interest
 
