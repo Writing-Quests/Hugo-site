@@ -9,22 +9,25 @@
         <li> <i tabindex="0" class="fa-solid fa-pen-nib"></i> A Framework of rules, guidelines, and supporting assets (such as trackers and virtual badges) to support writing groups and communities who would like to host their own Writing Quests.</li>
         <li> <i tabindex="0" class="fa-solid fa-pen-nib"></i> An organization promoting creativity and the love of writing through the facilitation of quests to motivate writers.</li>
     </ul>
-    {{ with .Site.Params.homepage.logo }} <img class="home-logo" src="{{(( resources.Get . )).RelPermalink}}" alt="The Writing Quests Logo, a Phoenix emerging from a open book." /> {{ end }}
+
     <h2>How can I get involved?</h2>
     <ul>
         <li> <i tabindex="0" class="fa-solid fa-pen-nib"></i> Quest Guides- The people who host the Writing Quests are called Quest Guides.  They will help creatives through the process of setting goals, prepping for the quests, and provide encouragement during the event. Click <a href="/get-involved/framework/">here</a> to view the framework and get started.</li>
 
-        <li> <i tabindex="0" class="fa-solid fa-pen-nib"></i> Participants- Anyone can participate even if you are not a writer.  Click <a href="get-involved/participating-groups/">here</a> to find a group near you.</li>
+        <li> <i tabindex="0" class="fa-solid fa-pen-nib"></i> Participants- Anyone can participate even if you are not a writer. </li> 
 
         <li> <i tabindex="0" class="fa-solid fa-pen-nib"></i> Volunteers- Writing Quests is an all volunteer organization.  If you want to volunteer, please email <a href="mailto:info@writingquests.org">info@writingquests.org</a> and let us know your experience and if applicable, what you are looking to help with.</li>
     </ul>
-</div> <!-- end left-column -->>
+</div> <!-- end left-column -->
 <div class="right-column">
     <div class="home-dashboard text-wq-green">
     <div class="dashboard-calendar">
-        {{ with .Site.Params.homepage.calendar }}
-        <iframe src="{{ . }}" style="border:solid 1px #777" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+        {{ with .Site.Params.homepage.calendar_agenda }}
+        <iframe src="{{ . }}" style="border:solid 1px #777" width="100%" height="100%" frameborder="0" scrolling="yes"></iframe>
         {{ end }}
+    </div>
+    <div class="dashboard-logo">
+    {{ with .Site.Params.homepage.logo }} <img class="home-logo" src="{{(( resources.Get . )).RelPermalink}}" alt="The Writing Quests Logo, a Phoenix emerging from a open book." /> {{ end }}
     </div>
     <div class="dashboard-rss">
         <div class="dashboard-section-title"><h1>Read our Newsletter</h1></div>
@@ -40,7 +43,7 @@
             {{ end }}
         </div>
     </div> <!-- end home-dashboard -->
-</div> <!-- end right-column -->>
+</div> <!-- end right-column -->
     <div tabindex="1" class="dashboard-panel social-panel">
         {{ with .Site.Params.homepage.twitter }}
         <a href="{{ . }}" tabindex="0"><i tabindex="0" class="fa-brands fa-twitter"></i></a>
