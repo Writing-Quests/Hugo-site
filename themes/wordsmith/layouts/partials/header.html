@@ -1,4 +1,5 @@
 <div class="flex wq-navbar w-full h-20">
+    {{ with .Site.Params.homepage.logo_png55 }}   <a class="site-title" tabindex="0" href="/"><img class="home-logo nav-logo" src="{{(( resources.Get . )).RelPermalink}}" alt="The Writing Quests Logo, a Phoenix emerging from a open  book." /></a> {{ end }}
         <a class="site-title" tabindex="0" href="/"><h1 tabindex="1" class="text-4xl p-6 w-76">{{ site.Title }}</h1></a>
         {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
 </div>

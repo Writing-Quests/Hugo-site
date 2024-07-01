@@ -6,6 +6,8 @@ theme = 'wordsmith'
 [params]
     [params.homepage]
       logo = "images/logo2024.svg"
+      logo_png = "images/logo2024-light.png"
+      logo_png55 = "images/logo2024-dark55.png"
       rss = "https://writingquests.substack.com/feed"
       twitter = "https://x.com/writingquests"
       pinterest = "https://pinterest.com/WritingQuests/"
@@ -13,6 +15,7 @@ theme = 'wordsmith'
       facebook = "https://facebook.com/groups/writingquests"
       youtube = "https://www.youtube.com/channel/UCGNbZWYi4pTkENOYYLgtCvg"
       calendar = "https://calendar.google.com/calendar/embed?src=ef1f8f146ebcac42b495cdc97fe11f1a5d102695cd12cc5ceb76fec5987c9afd%40group.calendar.google.com&ctz=UTC"
+      calendar_agenda = "https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FChicago&bgcolor=%23ffffff&mode=AGENDA&src=ZWYxZjhmMTQ2ZWJjYWM0MmI0OTVjZGM5N2ZlMTFmMWE1ZDEwMjY5NWNkMTJjYzVjZWI3NmZlYzU5ODdjOWFmZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23E4C441"
       contact = "https://docs.google.com/forms/d/e/1FAIpQLSdgVgL2yTOYHUM9SJ379OHzzOTCwclUr4wNmBawq_fvIZcLNA/viewform?embedded=true"
       help = "https://docs.google.com/forms/d/e/1FAIpQLSdE1IFm3SlGAf4bkWeriH3uFDLc6KxqMGfLUw9jCV-emsytDg/viewform?embedded=true"
     [params.meta]
@@ -26,16 +29,22 @@ theme = 'wordsmith'
     weight = 20
 
   [[menu.main]]
+    name = 'home'
+    pageRef = '/'
+    parent = 'about'
+    weight = 20
+
+  [[menu.main]]
     name = 'writing quests'
     pageRef = '/about/'
     parent = 'about'
-    weight = 20
+    weight = 30
 
   [[menu.main]]
     name = 'data privacy'
     pageRef = '/cla-privacy-policy/'
     parent = 'about'
-    weight = 20
+    weight = 40
 
   [[menu.main]]
     name = 'framework'
@@ -45,11 +54,6 @@ theme = 'wordsmith'
   [[menu.main]]
     name = 'blog'
     pageRef = '/blog/'
-    weight = 20
-
-  [[menu.main]]
-    name = 'contact us'
-    pageRef = '/contact/'
     weight = 20
 
   [[menu.main]]
@@ -74,3 +78,8 @@ theme = 'wordsmith'
     parent = 'get involved'
     pageRef = '/get-involved/assets-and-resources.md'
     weight = 20
+
+  [[menu.main]]
+    name = 'contact us'
+    pageRef = '/contact/'
+    weight = 30
