@@ -6,7 +6,7 @@ theme = 'wordsmith'
 [params]
     [params.homepage]
       logo = "images/logo2024.svg"
-      rss = "https://writingquests.substack.com/feed"
+      rss = "https://writingquests.substack.com/feed.xml"
       twitter = "https://x.com/writingquests"
       pinterest = "https://pinterest.com/WritingQuests/"
       instagram = "https://instagram.com/writingquests"

@@ -1092,7 +1092,7 @@ nav a {
 
 .dashboard-rss-scroll {
   padding: .5rem;
-  height: calc(30vh - 4rem);
+  height: calc(60vh - 4rem);
   overflow: auto;
 }
 
@@ -1134,6 +1134,14 @@ i {
 
 .rss-content li p {
   padding-left: 2rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.rss-content li {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .welcome-text ul li {

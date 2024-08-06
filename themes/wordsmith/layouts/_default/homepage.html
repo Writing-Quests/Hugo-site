@@ -12,9 +12,9 @@
     {{ with .Site.Params.homepage.logo }} <img class="home-logo" src="{{(( resources.Get . )).RelPermalink}}" alt="The Writing Quests Logo, a Phoenix emerging from a open book." /> {{ end }}
     <h2>How can I get involved?</h2>
     <ul>
-        <li> <i tabindex="0" class="fa-solid fa-pen-nib"></i> Quest Guides- The people who host the Writing Quests are called Quest Guides.  They will help creatives through the process of setting goals, prepping for the quests, and provide encouragement during the event. Click <a href="/get-involved/framework/">here</a> to view the framework and get started.</li>
+        <li> <i tabindex="0" class="fa-solid fa-pen-nib"></i> Quest Guides- The people who host the Writing Quests are called Quest Guides.  They will help creatives through the process of setting goals, prepping for the quests, and provide encouragement during the event. <!--Click <a href="/get-involved/framework/">here</a> to view the framework and get started.--> </li>
 
-        <li> <i tabindex="0" class="fa-solid fa-pen-nib"></i> Participants- Anyone can participate even if you are not a writer.  Click <a href="get-involved/participating-groups/">here</a> to find a group near you.</li>
+        <li> <i tabindex="0" class="fa-solid fa-pen-nib"></i> Participants- Anyone can participate even if you are not a writer.  <!-- Click <a href="get-involved/participating-groups/">here</a> to find a group near you. --> </li>
 
         <li> <i tabindex="0" class="fa-solid fa-pen-nib"></i> Volunteers- Writing Quests is an all volunteer organization.  If you want to volunteer, please email <a href="mailto:info@writingquests.org">info@writingquests.org</a> and let us know your experience and if applicable, what you are looking to help with.</li>
     </ul>
@@ -32,10 +32,12 @@
             {{ $url := .Site.Params.homepage.rss }}
             {{ with resources.GetRemote $url | transform.Unmarshal }}
         <ul class="rss-content">
+            {{ range .channel.item }}
             <li>
-                <a href="{{ .channel.item.link }}"><i tabindex="0" class="fa-solid fa-pen-nib"></i>{{ .channel.item.title }}</a>
-            <p>{{ .channel.item.description }}</p>
+                <a href="{{ .link }}"><i tabindex="0" class="fa-solid fa-pen-nib"></i>{{ .title }}</a>
+            <p>{{ .description }}</p>
             </li>
+            {{ end }}
         </ul>
             {{ end }}
         </div>
