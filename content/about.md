@@ -39,9 +39,9 @@ This framework aims to tell stories of love and loss, injustice, success and fai
 
 ## How Can I Get Involved?<a id="how-can-i-get-involved"></a>
 
-Quest Guides- The people who host the Writing Quests are called Quest Guides.  They will help creatives through the process of setting goals, prepping for the quests, and provide encouragement during the event. Click on Get Involved> The Framework to get started.
+Quest Guides- The people who host the Writing Quests are called Quest Guides.  They will help creatives through the process of setting goals, prepping for the quests, and provide encouragement during the event. 
 
-Participants- Anyone can participate even if you are not a writer.  Click on Get Involved> Participating Groups to find a group near you. 
+Participants- Anyone can participate even if you are not a writer.  A list of participating groups will be shared here.. 
 
 Volunteers- Writing Quests is an all volunteer organization.  If you want to volunteer, please [fill out our form](/get-involved/help/) and let us know your experience and if applicable,  what you are looking to help with.
 
