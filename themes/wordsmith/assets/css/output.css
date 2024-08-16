@@ -203,6 +203,14 @@ table {
   /* 3 */
 }
 
+table.tableformat, table.tableformat td, table.tableformat th {
+    vertical-align: text-top !important;
+    border: 1px solid grey !important; 
+    border-collapse: collapse;
+    padding-top: 3px !important;
+    padding: 3px !important;
+}
+
 /*
 1. Change the font styles in all browsers.
 2. Remove the margin in Firefox and Safari.
