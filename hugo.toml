@@ -3,6 +3,9 @@ languageCode = 'en-us'
 title = 'Writing Quests'
 theme = 'wordsmith'
 
+[markup.goldmark.parser.attribute]
+block = true # default is false
+
 [params]
     [params.homepage]
       logo = "images/logo2024.svg"
@@ -74,3 +77,4 @@ theme = 'wordsmith'
     parent = 'get involved'
     pageRef = '/get-involved/assets-and-resources.md'
     weight = 20
+
