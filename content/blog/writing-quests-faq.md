@@ -71,12 +71,11 @@ To that effect, we will provide:
 What Writing Quests is not
 --------------------------
 
-Writing Quests (WQ) is **not** NaNoWriMo and has no aspirations to
-replace NaNoWriMo, even though WQ is NaNo-compatible. WQ has no large
-central organization and has no intentions to seek out non-profit status
-or to apply for financial grants. Furthermore, WQ itself will not host
-writing quests but will only provide the Framework to enable others to
-do so.
+Writing Quests (WQ) is **not** NaNoWriMo and has no aspirations to replace
+NaNoWriMo, even though WQ is NaNo-compatible. WQ has no large central
+organization and has no intentions to seek out non-profit status or to apply
+for financial grants. WQ provides the Framework to enable others to host their
+own Quests.
 
 What does NaNo-compatible mean?
 -------------------------------
@@ -127,10 +126,10 @@ This is the Writing Quests term for a writing challenge.
 
 ## Why did you choose this term?
 
-It seemed appropriate for what we (and the actual Quest host) are
-offering: there is an objective (e.g., 50,000+ word novel draft in 30
-days) that many participants share (many people can share the same
-Quest) but there is also an individual aspect to it--each participant
+It seemed appropriate for what we (and the actual Quest host) are offering:
+there is an objective (e.g., 50,000+ word novel draft in 30 days or 50 hours of
+editing in a month) that many participants share (many people can share the
+same Quest) but there is also an individual aspect to it--each participant
 embarks on their own individual Quest and experiences their own journey.
 
 Note: you don't have to be into fantasy or historical adventures or role
@@ -144,17 +143,16 @@ Yes. The Writing Quest Framework is available for all to use.
 How do I create a Writing Quest?
 --------------------------------
 
-Step One: Read our Guidebook to learn how to prepare for a Quest. (here)
+Step One: Read our Guidebook to learn how to prepare for a Quest. 
 
-Step Two: Use our Quest Wizard to Create a Quest. (here)
-
-Step Three: Use our graphics found (here) to create promotional
+Step Two: Use our graphics to create promotional
 material.
 
-Step Four: Join our Discord (here) to promote your Quest. Share your
-Quest via social media.
+Step Three: Promote your Quest. Share your Quest via social media.
 
-Step Five: Add your Event to the Quests page (here).
+Step Four: Contact us to add your Event to the Quests page.
+
+**Important note**: we are intending to be usable November 2024.
 
 What is the Writing Quest Framework?
 ------------------------------------
@@ -174,7 +172,7 @@ Can other creatives make or join a Quest?
 -----------------------------------------
 
 Yes! There are alternate metrics that might be more appropriate to use
-for tracking progress (e.g., hours spent, days spent) if you are, for
+for tracking progress (e.g., hours spent) if you are, for
 instance, creating graphical artwork or writing individual poems.
 
 Do the Writing Quests get reviewed or approved by anyone?
