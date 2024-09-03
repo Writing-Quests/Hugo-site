@@ -5,9 +5,7 @@ date = 2024-06-11T10:31:53+01:00
 draft = false
 +++
 
-Today, I have the pleasure to announce the unveiling of our Writing Quests Framework and Community.
-
-[![Read more](/read-more.png)](/blog/welcome-to-writing-quests/)
+It is with pleasure that we announce the unveiling of our Writing Quests Framework and Community.
 
 <!--more-->
 

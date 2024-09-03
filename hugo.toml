@@ -29,16 +29,22 @@ block = true # default is false
     weight = 20
 
   [[menu.main]]
-    name = 'writing quests'
+    name = 'about writing quests'
     pageRef = '/about/'
     parent = 'about'
-    weight = 20
+    weight = 25
+
+  [[menu.main]]
+    name = 'mission, vision, & values'
+    pageRef = '/mission/'
+    parent = 'about'
+    weight = 27
 
   [[menu.main]]
     name = 'data privacy'
     pageRef = '/cla-privacy-policy/'
     parent = 'about'
-    weight = 20
+    weight = 29
 
   [[menu.main]]
     name = 'framework'
@@ -66,6 +72,12 @@ block = true # default is false
     pageRef = '/get-involved/help/'
     weight = 20
 
+  [[menu.main]]
+    name = 'contributors'
+    parent = 'get involved'
+    pageRef = '/get-involved/contributors/'
+    weight = 25
+
 # LATER   [[menu.main]]
 # LATER     name = 'quests'
 # LATER     parent = 'get involved'
@@ -76,5 +88,5 @@ block = true # default is false
     name = 'assets and resources'
     parent = 'get involved'
     pageRef = '/get-involved/assets-and-resources.md'
-    weight = 20
+    weight = 29
 
