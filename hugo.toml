@@ -38,13 +38,13 @@ block = true # default is false
     name = 'mission, vision, & values'
     pageRef = '/mission/'
     parent = 'about'
-    weight = 23
+    weight = 27
 
   [[menu.main]]
     name = 'data privacy'
     pageRef = '/cla-privacy-policy/'
     parent = 'about'
-    weight = 20
+    weight = 29
 
   [[menu.main]]
     name = 'framework'
@@ -76,7 +76,7 @@ block = true # default is false
     name = 'contributors'
     parent = 'get involved'
     pageRef = '/get-involved/contributors/'
-    weight = 20
+    weight = 25
 
 # LATER   [[menu.main]]
 # LATER     name = 'quests'
@@ -88,5 +88,5 @@ block = true # default is false
     name = 'assets and resources'
     parent = 'get involved'
     pageRef = '/get-involved/assets-and-resources.md'
-    weight = 20
+    weight = 29
 
