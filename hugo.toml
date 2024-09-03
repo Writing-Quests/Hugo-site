@@ -29,10 +29,16 @@ block = true # default is false
     weight = 20
 
   [[menu.main]]
-    name = 'writing quests'
+    name = 'about writing quests'
     pageRef = '/about/'
     parent = 'about'
-    weight = 20
+    weight = 25
+
+  [[menu.main]]
+    name = 'mission, vision, & values'
+    pageRef = '/mission/'
+    parent = 'about'
+    weight = 23
 
   [[menu.main]]
     name = 'data privacy'
@@ -64,6 +70,12 @@ block = true # default is false
     name = 'help out'
     parent = 'get involved'
     pageRef = '/get-involved/help/'
+    weight = 20
+
+  [[menu.main]]
+    name = 'contributors'
+    parent = 'get involved'
+    pageRef = '/get-involved/contributors/'
     weight = 20
 
 # LATER   [[menu.main]]

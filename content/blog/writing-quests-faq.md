@@ -7,8 +7,6 @@ draft = false
 
 Let's answer some questions about Writing Quests.
 
-[![Read more](/read-more.png)](/blog/writing-quests-faq/)
-
 <!--more-->
 
 - [What is Writing Quests?](#what-is-writing-quests)
@@ -143,7 +141,7 @@ Yes. The Writing Quest Framework is available for all to use.
 How do I create a Writing Quest?
 --------------------------------
 
-Step One: Read our Guidebook to learn how to prepare for a Quest. 
+Step One: Read our Write Recipe Book (*coming soon*) to learn how to prepare for a Quest. 
 
 Step Two: Use our graphics to create promotional
 material.
@@ -160,7 +158,7 @@ What is the Writing Quest Framework?
 A Framework includes rules, guidelines, and supporting assets (such as
 trackers and virtual badges) to support writing groups and communities
 who would like to host their own Writing Quests. Read more about our
-Rules (here), Guidebooks (here), and Assets (here).
+Rules, Write Recipe book, and Assets.
 
 Is Writing Quests associated with NaNoWriMo?
 --------------------------------------------
@@ -208,8 +206,9 @@ in the pursuit of a quest objective.
 How can I find quests in my area?
 ---------------------------------
 
-We are planning to add a page on our website where planned and
-in-progress quests will be linked.
+We are planning to add a directory on our website where planned and in-progress
+quests will be linked. There will also be a calendar in the directory where you
+can see in progress events from other groups.
 
 I don\'t write in English, can I still join?
 --------------------------------------------
