@@ -819,6 +819,14 @@ p a {
     color: blue;
 }
 
+p.larger {
+    font-size: 1.1em;
+    color: white;
+    background-color: #57BCFF;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+
 h1 a {
   color: #ffffff;
 }
