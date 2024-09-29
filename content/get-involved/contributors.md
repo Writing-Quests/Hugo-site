@@ -12,17 +12,21 @@ Writing Quests is the creation of volunteers from around the world. Their effort
 Contributors to Writing Quests include:
 
 * Ashley Baker
+* Byron
 * Coral Sands
 * Gertrude Daly
 * hevs
 * Jaimie Black
 * Janna Willard
 * Jessica the DancinLibrarian
+* Katie Lazicki
+* keliose
 * Melanie Francisco
+* Rebecca Ramaglia
 * Sharon.NJ
+* Sherry D. Ramsey
+* soundofez
 * StrawberrySunrise
 * Svenja Wiertz
 * Tim Yao
 * Waddles
-* keliose
-* soundofez
