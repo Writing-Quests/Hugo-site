@@ -44,7 +44,7 @@
             {{ range .channel.item }}
             <li>
                 <a href="{{ .link }}"><i tabindex="0" class="fa-solid fa-pen-nib"></i>{{ .title }}</a>
-            <p>{{ .description }}</p>
+            <p>{{ .description | htmlUnescape }}</p>
             </li>
             {{ end }}
         </ul>
