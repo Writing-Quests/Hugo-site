@@ -52,6 +52,18 @@ block = true # default is false
     weight = 20
 
   [[menu.main]]
+    name = 'view framework'
+    pageRef = '/framework/'
+    parent = 'framework'
+    weight = 24
+
+  [[menu.main]]
+    name = 'trackers'
+    pageRef = '/tracker/'
+    parent = 'framework'
+    weight = 26
+
+  [[menu.main]]
     name = 'blog'
     pageRef = '/blog/'
     weight = 20
