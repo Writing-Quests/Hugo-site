@@ -117,4 +117,4 @@ If you have any questions about these T&C, please contact us at
 
 I Agree to the Writing Quests Terms and Conditions. 
 
-[![Confirm and Continue](/confirm-and-continue.png)](/framework/framework)
+[![Confirm and Continue](/confirm-and-continue.png)](/writing_quest_framework_v20241114.pdf)
