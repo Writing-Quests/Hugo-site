@@ -102,3 +102,4 @@ block = true # default is false
     pageRef = '/get-involved/assets-and-resources.md'
     weight = 29
 
+ignoreLogs = ['warning-goldmark-raw-html']

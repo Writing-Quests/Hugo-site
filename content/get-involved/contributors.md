@@ -18,6 +18,7 @@ Contributors to Writing Quests include:
 * hevs
 * Jaimie Black
 * Janna Willard
+* JB Corso
 * Jessica the DancinLibrarian
 * Katie Lazicki
 * keliose

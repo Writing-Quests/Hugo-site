@@ -8,7 +8,7 @@ Badges are earned via Writing Quests. If you have an idea for a badge or are an 
 
 A great way to track your progress during a Writing Quest is by using a Word Count Tracker. Writing Quests is making two trackers available today:
 
-* A [view-only google drive folder](https://drive.google.com/drive/folders/1zsjBv1wG4HquO-azqirvdHXDLQRak067?usp=sharing:) with the [Writing Quests Progress Tracker](https://drive.google.com/drive/folders/1qUSBlYEVbFf8jbrorG7CvaaDJ_3oz8uu) (*based on google sheets*) and [Writing Quests Aggregator](https://drive.google.com/drive/folders/1qUSBlYEVbFf8jbrorG7CvaaDJ_3oz8uu) (*also based on google sheets*)
+* A [view-only google drive folder](https://drive.google.com/drive/folders/1zsjBv1wG4HquO-azqirvdHXDLQRak067?usp=sharing:) with the [Writing Quests Progress Tracker](https://drive.google.com/drive/folders/1qUSBlYEVbFf8jbrorG7CvaaDJ_3oz8uu) (*based on google sheets*).
 * The *beta* version of [Questy](https://questy.writingquests.org), the web-based tracker.
 
 Outside of Writing Quests, We've also seen many users of [trackbear.app](https://trackbear.app) that promises to be free forever, boasting an impressive feauture set and the ability to support community progress graphs (leader boards).
@@ -19,4 +19,3 @@ All of our assets are available under the [Creative Commons Attribution Non-Comm
 
 ![2024 Writing Quests Logo - dark](/logo2024-dark.png)
 ![2024 Writing Quests Logo - light](/logo2024-light.png)
-
